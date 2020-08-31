@@ -18,7 +18,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>归档：2020 - Java小站</title>
+  <title>标签：面试 - Java小站</title>
   
 
   
@@ -433,14 +433,14 @@
 
 <script>
   // 处理封面 此时 jquery 还没加载
-  if ("half" == "none") { // 移除封面
+  if ("none" == "none") { // 移除封面
     document.getElementsByClassName('cover-wrapper')[0].style.display = "none";
     document.getElementsByClassName('l_header', 'cover-wrapper')[0].classList.add("show");
   } else {
-    if ("half" == "half") { // 半屏
+    if ("none" == "half") { // 半屏
       document.getElementsByClassName('cover-wrapper')[0].setAttribute('id', 'half');
       document.getElementsByClassName('scroll-down')[0].style.display = "none";
-    } else if ("half" == "full") { // 全屏
+    } else if ("none" == "full") { // 全屏
       document.getElementsByClassName('cover-wrapper')[0].setAttribute('id', 'full');
       document.getElementsByClassName('scroll-down')[0].style.display = "";
     }
@@ -453,18 +453,14 @@
         
         
 
+
 <div class='l_main'>
-	
-		
+  
+    
+      
   <section class="post-list">
     
       
-        
-          
-        
-          
-        
-          
         
           
         
@@ -518,143 +514,6 @@
           </div>
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/OrangeMaid.github.io/2020/08/28/hello-world/">
-        Hello World
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        <time>2020-08-28</time>
-        
-      </div>
-      
-        <div>
-            <a class='readmore' href='/OrangeMaid.github.io/2020/08/28/hello-world/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/OrangeMaid.github.io/2020/08/27/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/">
-        多线程
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        乐观锁悲观锁试用场景?悲观锁适合写操作多的场景，先加锁可以保证写操作时数据正确。乐观锁适合读操作多的场景，不加锁的特点能够使其读操作的性能大幅提升。
-java面试题之什么是死锁、活锁、饿死和竞态条件？死锁：是指两个或两个以上的进程（或线程）在执行过程中，因争夺资源而造成的一种相互等待的现象，若无外力作用，他们将无法推进下去；
-活锁：是指两个线程优先级相同，都礼让不走，就这样一直僵持下去；
-饿...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        <time>2020-08-27</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/OrangeMaid.github.io/categories/Java/">Java</a>
-        
-      </div>
-      
-        <div>
-            <a class='readmore' href='/OrangeMaid.github.io/2020/08/27/Java/%E5%A4%9A%E7%BA%BF%E7%A8%8B/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/OrangeMaid.github.io/2020/08/27/Java/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/">
-        Java集合框架
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        3.4. Map
-3.4.1. HashMap(数组+链表+红黑树)HashMap 根据键的 hashCode 值存储数据,大多数情况下可以直接定位到它的值,因而具有很快的访问速度,但遍历顺序却是不确定的。 HashMap 最多只允许一条记录的键为 null,允许多条记录的值为 null。HashMap 非线程安全,即任一时刻可以有多个线程同时写 HashMap,可能会导致数据的不一致。如果...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        <time>2020-08-27</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/OrangeMaid.github.io/categories/Java/">Java</a>
-        
-      </div>
-      
-        <div>
-            <a class='readmore' href='/OrangeMaid.github.io/2020/08/27/Java/%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
     
   </section>
   
@@ -662,7 +521,8 @@ java面试题之什么是死锁、活锁、饿死和竞态条件？死锁：是�
   
 
 
-	
+    
+  
 </div>
 <aside class='l_side'>
   
