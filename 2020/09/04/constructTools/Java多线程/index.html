@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta name="renderer" content="webkit">
@@ -18,7 +16,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>归档：2019/8 - wang&#39;liang的小站</title>
+  <title>wang&#39;liang的小站</title>
   
 
   
@@ -335,7 +333,7 @@
 
   
   
-      <div class='cover-wrapper  search' style="display: none;">
+      <div class='cover-wrapper post search' style="display: none;">
         
           <div class='cover-bg lazyload placeholder' data-bg="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.jpg"></div>
         
@@ -433,14 +431,14 @@
 
 <script>
   // 处理封面 此时 jquery 还没加载
-  if ("half" == "none") { // 移除封面
+  if ("none" == "none") { // 移除封面
     document.getElementsByClassName('cover-wrapper')[0].style.display = "none";
     document.getElementsByClassName('l_header', 'cover-wrapper')[0].classList.add("show");
   } else {
-    if ("half" == "half") { // 半屏
+    if ("none" == "half") { // 半屏
       document.getElementsByClassName('cover-wrapper')[0].setAttribute('id', 'half');
       document.getElementsByClassName('scroll-down')[0].style.display = "none";
-    } else if ("half" == "full") { // 全屏
+    } else if ("none" == "full") { // 全屏
       document.getElementsByClassName('cover-wrapper')[0].setAttribute('id', 'full');
       document.getElementsByClassName('scroll-down')[0].style.display = "";
     }
@@ -454,77 +452,171 @@
         
 
 <div class='l_main'>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
   
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/OrangeMaid.github.io/2019/08/05/hexo%E6%90%AD%E5%BB%BA/">
-        hexo 搭建博客日志
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        hexo 搭建博客日志hexo 简介Hexo是一款基于Node.js的静态博客框架，依赖少易于安装使用，可以方便的生成静态网页托管在GitHub和Coding上，是搭建博客的首选框架。大家可以进入hexo官网进行详细查看，因为Hexo的创建者是台湾人，对中文的支持很友好，可以选择中文进行查看##hexo 搭建步骤
 
-安装git
-安装node.js
-安装Hexo
-GitHub创建个人仓库h
-生...
+
+  <div class='article-header'>
+    
+    <div class="article-meta" id="top">
       
+      
+      
+    </div>
+  </div>
+
+
+  <div class="article-entry" itemprop="articleBody">
+    
+    
+    <h3 id="Java多线程"><a href="#Java多线程" class="headerlink" title="Java多线程"></a>Java多线程</h3><h3 id=""><a href="#" class="headerlink" title=""></a></h3><h4 id="什么是进程？"><a href="#什么是进程？" class="headerlink" title="什么是进程？"></a>什么是进程？</h4><p>进程是程序的一次执行过程，是系统运行程序的基本单位，因此进程是动态的。系统运行一个程序即是一个进程从创建，运行到消亡的过程。</p>
+<p>在 Java 中，当我们启动 main 函数时其实就是启动了一个 JVM 的进程，而 main 函数所在的线程就是这个进程中的一个线程，也称主线程。</p>
+<h4 id="什么是线程？"><a href="#什么是线程？" class="headerlink" title="什么是线程？"></a>什么是线程？</h4><p>线程与进程相似，但线程是一个比进程更小的执行单位。一个进程在其执行的过程中可以产生多个线程。与进程不同的是同类的多个线程共享进程的<strong>堆</strong>和<strong>方法区</strong>资源，但每个线程有自己的<strong>程序计数器</strong>、<strong>虚拟机栈</strong>和<strong>本地方法栈</strong>，所以系统在产生一个线程，或是在各个线程之间作切换工作时，负担要比进程小得多，也正因为如此，线程也被称为轻量级进程。</p>
+<h4 id="创建线程的方式？"><a href="#创建线程的方式？" class="headerlink" title="创建线程的方式？"></a>创建线程的方式？</h4>
+    
+      
+      <div class='footer'>
+        
+        
+        
+          <div class='copyright'>
+            <blockquote>
+              
+                
+                  <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+                
+              
+                
+                  <p>本文永久链接是：<a href=https://orangemaid.github.io/2020/09/04/constructTools/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/>https://orangemaid.github.io/2020/09/04/constructTools/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/</a></p>
+                
+              
+            </blockquote>
+          </div>
+        
+        
+      </div>
     
   </div>
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        <time>2019-08-05</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/OrangeMaid.github.io/categories/hexo%E6%90%AD%E5%BB%BA/">hexo搭建</a>
-        
-      </div>
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
       
-        <div>
-            <a class='readmore' href='/OrangeMaid.github.io/2019/08/05/hexo%E6%90%AD%E5%BB%BA/'>
-            阅读全文
-          </a>
-        </div>
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-05T10:37:35+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2020年9月5日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://orangemaid.github.io/2020/09/04/constructTools/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/&title= - wang'liang的小站&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://orangemaid.github.io/2020/09/04/constructTools/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/&title= - wang'liang的小站&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://orangemaid.github.io/2020/09/04/constructTools/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/&title= - wang'liang的小站&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </div>
+
+
+  
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/OrangeMaid.github.io/2020/09/05/Life/diary01/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>加班的周六</p>
+          <p class='content'>人生哪能多如意，万事只求半称心
+</p>
+        </a>
+      
+      
+        <a class='next' href='/OrangeMaid.github.io/2020/08/31/constructTools/jsDelivr+GitHub+PicGo%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/'>
+          <p class='title'>jsDelivr+GitHub+PicGo搭建图床<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>jsDelivr+GitHub+PicGo搭建图床
+
+目前GITHUB仓库容量是没有上限的！不过官方推荐在1G以内！
+仓库单个文件50M会收到警告，大于100M会被拒绝！
+jsDelivr仅能针...</p>
+        </a>
       
     </div>
   
+</article>
 
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
 </div>
 
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  </article>
 
 
-	
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -532,146 +624,28 @@ GitHub创建个人仓库h
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/OrangeMaid.github.io/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">wang'liang的小站</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/OrangeMaid.github.io/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/OrangeMaid"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/OrangeMaid.github.io/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-  
-
-  <section class="widget category shadow desktop">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/OrangeMaid.github.io/categories/Java/" href="/OrangeMaid.github.io/categories/Java/"
-            id="OrangeMaidgithubiocategoriesJava"
-            ><div class='name'>Java</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/OrangeMaid.github.io/categories/hexo%E6%90%AD%E5%BB%BA/" href="/OrangeMaid.github.io/categories/hexo%E6%90%AD%E5%BB%BA/"
-            id="OrangeMaidgithubiocategorieshexoE690ADE5BBBA"
-            ><div class='name'>hexo搭建</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/OrangeMaid.github.io/categories/tools%E6%90%AD%E5%BB%BA/" href="/OrangeMaid.github.io/categories/tools%E6%90%AD%E5%BB%BA/"
-            id="OrangeMaidgithubiocategoriestoolsE690ADE5BBBA"
-            ><div class='name'>tools搭建</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/OrangeMaid.github.io/categories/%E7%94%9F%E6%B4%BB%E5%B0%8F%E8%AE%B0/" href="/OrangeMaid.github.io/categories/%E7%94%9F%E6%B4%BB%E5%B0%8F%E8%AE%B0/"
-            id="OrangeMaidgithubiocategoriesE7949FE6B4BBE5B08FE8AEB0"
-            ><div class='name'>生活小记</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/OrangeMaid.github.io/categories/%E9%9D%A2%E8%AF%95/" href="/OrangeMaid.github.io/categories/%E9%9D%A2%E8%AF%95/"
-            id="OrangeMaidgithubiocategoriesE99DA2E8AF95"
-            ><div class='name'>面试</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Java%E5%A4%9A%E7%BA%BF%E7%A8%8B"><span class="toc-text">Java多线程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-text"></span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%BF%9B%E7%A8%8B%EF%BC%9F"><span class="toc-text">什么是进程？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E7%BA%BF%E7%A8%8B%EF%BC%9F"><span class="toc-text">什么是线程？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E7%BA%BF%E7%A8%8B%E7%9A%84%E6%96%B9%E5%BC%8F%EF%BC%9F"><span class="toc-text">创建线程的方式？</span></a></li></ol></li></ol>
     </div>
   </section>
 
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/OrangeMaid.github.io/tags/Java/" style="font-size: 24px; color: #555">Java</a> <a href="/OrangeMaid.github.io/tags/diary/" style="font-size: 14px; color: #999">diary</a> <a href="/OrangeMaid.github.io/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/OrangeMaid.github.io/tags/jsDelivr-GitHub-PicGo/" style="font-size: 14px; color: #999">jsDelivr+GitHub+PicGo</a> <a href="/OrangeMaid.github.io/tags/%E9%9D%A2%E8%AF%95/" style="font-size: 14px; color: #999">面试</a>
-    </div>
-  </section>
-
-
-  
 
   
 
 
 </aside>
+
 
 
       </div>
