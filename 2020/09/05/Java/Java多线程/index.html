@@ -16,7 +16,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>wang&#39;liang的小站</title>
+  <title>多线程 - wang&#39;liang的小站</title>
+  
+    <meta name="keywords" content="Java">
   
 
   
@@ -421,8 +423,8 @@
 
 
 <div id="pjax-data" style="display: none">
-  <div id="pjax-ispage">false</div>
-  <div id="pjax-pageTitle"></div>
+  <div id="pjax-ispage">true</div>
+  <div id="pjax-pageTitle">多线程</div>
   <div id="pjax-enable-cover">true</div>
   <div id="pjax-comment-path"></div>
   <div id="pjax-comment-placeholder"></div>
@@ -462,6 +464,64 @@
       
       
       
+        <h1 class="title">
+          <a href="/OrangeMaid.github.io/2020/09/05/Java/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/">
+            多线程
+          </a>
+        </h1>
+        <div class='new-meta-box'>
+          
+            
+              
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="">
+    <p>wang'liang</p>
+  </a>
+</div>
+
+            
+          
+            
+              
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/OrangeMaid.github.io/categories/Java/">Java</a>
+    </a>
+  </div>
+
+
+            
+          
+            
+              <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2020年9月5日</p>
+  </a>
+</div>
+
+            
+          
+            
+              
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="多线程" data-path="/OrangeMaid.github.io/2020/09/05/Java/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+            
+          
+        </div>
+      
     </div>
   </div>
 
@@ -472,7 +532,8 @@
     <h3 id="Java多线程"><a href="#Java多线程" class="headerlink" title="Java多线程"></a>Java多线程</h3><h3 id=""><a href="#" class="headerlink" title=""></a></h3><h4 id="什么是进程？"><a href="#什么是进程？" class="headerlink" title="什么是进程？"></a>什么是进程？</h4><p>进程是程序的一次执行过程，是系统运行程序的基本单位，因此进程是动态的。系统运行一个程序即是一个进程从创建，运行到消亡的过程。</p>
 <p>在 Java 中，当我们启动 main 函数时其实就是启动了一个 JVM 的进程，而 main 函数所在的线程就是这个进程中的一个线程，也称主线程。</p>
 <h4 id="什么是线程？"><a href="#什么是线程？" class="headerlink" title="什么是线程？"></a>什么是线程？</h4><p>线程与进程相似，但线程是一个比进程更小的执行单位。一个进程在其执行的过程中可以产生多个线程。与进程不同的是同类的多个线程共享进程的<strong>堆</strong>和<strong>方法区</strong>资源，但每个线程有自己的<strong>程序计数器</strong>、<strong>虚拟机栈</strong>和<strong>本地方法栈</strong>，所以系统在产生一个线程，或是在各个线程之间作切换工作时，负担要比进程小得多，也正因为如此，线程也被称为轻量级进程。</p>
-<h4 id="创建线程的方式？"><a href="#创建线程的方式？" class="headerlink" title="创建线程的方式？"></a>创建线程的方式？</h4>
+<h4 id="创建线程的方式？"><a href="#创建线程的方式？" class="headerlink" title="创建线程的方式？"></a>创建线程的方式？</h4><p>待续。。。。。</p>
+
     
       
       <div class='footer'>
@@ -488,7 +549,7 @@
                 
               
                 
-                  <p>本文永久链接是：<a href=https://orangemaid.github.io/2020/09/04/constructTools/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/>https://orangemaid.github.io/2020/09/04/constructTools/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/</a></p>
+                  <p>本文永久链接是：<a href=https://orangemaid.github.io/2020/09/05/Java/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/>https://orangemaid.github.io/2020/09/05/Java/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/</a></p>
                 
               
             </blockquote>
@@ -506,7 +567,7 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-05T10:37:35+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-05T11:11:41+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2020年9月5日</p>
@@ -517,6 +578,9 @@
       
         
           
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/OrangeMaid.github.io/tags/Java/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Java</p></a></div>
+
 
         
       
@@ -528,7 +592,7 @@
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://orangemaid.github.io/2020/09/04/constructTools/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/&title= - wang'liang的小站&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://orangemaid.github.io/2020/09/05/Java/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/&title=多线程 - wang'liang的小站&summary="
           
           >
           
@@ -540,7 +604,7 @@
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://orangemaid.github.io/2020/09/04/constructTools/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/&title= - wang'liang的小站&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://orangemaid.github.io/2020/09/05/Java/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/&title=多线程 - wang'liang的小站&summary="
           
           >
           
@@ -552,7 +616,7 @@
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://orangemaid.github.io/2020/09/04/constructTools/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/&title= - wang'liang的小站&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://orangemaid.github.io/2020/09/05/Java/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B/&title=多线程 - wang'liang的小站&summary="
           
           >
           
@@ -580,20 +644,11 @@
   
     <div class="prev-next">
       
-        <a class='prev' href='/OrangeMaid.github.io/2020/09/05/Life/diary01/'>
-          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>加班的周六</p>
+      
+        <a class='next' href='/OrangeMaid.github.io/2020/09/05/Life/diary01/'>
+          <p class='title'>加班的周六<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'>人生哪能多如意，万事只求半称心
 </p>
-        </a>
-      
-      
-        <a class='next' href='/OrangeMaid.github.io/2020/08/31/constructTools/jsDelivr+GitHub+PicGo%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/'>
-          <p class='title'>jsDelivr+GitHub+PicGo搭建图床<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>jsDelivr+GitHub+PicGo搭建图床
-
-目前GITHUB仓库容量是没有上限的！不过官方推荐在1G以内！
-仓库单个文件50M会收到警告，大于100M会被拒绝！
-jsDelivr仅能针...</p>
         </a>
       
     </div>
