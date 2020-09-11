@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta name="renderer" content="webkit">
@@ -18,7 +16,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>标签：diary - wang&#39;liang的小站</title>
+  <title>面试复盘 - wang&#39;liang的小站</title>
+  
+    <meta name="keywords" content="面试">
   
 
   
@@ -335,7 +335,7 @@
 
   
   
-      <div class='cover-wrapper  search' style="display: none;">
+      <div class='cover-wrapper post search' style="display: none;">
         
           <div class='cover-bg lazyload placeholder' data-bg="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.jpg"></div>
         
@@ -423,8 +423,8 @@
 
 
 <div id="pjax-data" style="display: none">
-  <div id="pjax-ispage">false</div>
-  <div id="pjax-pageTitle"></div>
+  <div id="pjax-ispage">true</div>
+  <div id="pjax-pageTitle">面试复盘</div>
   <div id="pjax-enable-cover">true</div>
   <div id="pjax-comment-path"></div>
   <div id="pjax-comment-placeholder"></div>
@@ -453,76 +453,261 @@
         
         
 
-
 <div class='l_main'>
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
   
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/OrangeMaid.github.io/2020/09/05/Life/diary01/">
-        加班的周六
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        人生哪能多如意，万事只求半称心
 
-      
+
+  <div class='article-header'>
     
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        <time>2020-09-05</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/OrangeMaid.github.io/categories/%E7%94%9F%E6%B4%BB%E5%B0%8F%E8%AE%B0/">生活小记</a>
-        
-      </div>
+    <div class="article-meta" id="top">
       
-        <div>
-            <a class='readmore' href='/OrangeMaid.github.io/2020/09/05/Life/diary01/'>
-            阅读全文
+      
+      
+        <h1 class="title">
+          <a href="/OrangeMaid.github.io/2020/09/11/interviewAnalyse/interviewByLiang/">
+            面试复盘
           </a>
+        </h1>
+        <div class='new-meta-box'>
+          
+            
+              
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="">
+    <p>wang'liang</p>
+  </a>
+</div>
+
+            
+          
+            
+              
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/OrangeMaid.github.io/categories/%E9%9D%A2%E8%AF%95/">面试</a>
+    </a>
+  </div>
+
+
+            
+          
+            
+              <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2020年9月11日</p>
+  </a>
+</div>
+
+            
+          
+            
+              
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="面试复盘" data-path="/OrangeMaid.github.io/2020/09/11/interviewAnalyse/interviewByLiang/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+            
+          
         </div>
       
     </div>
-  
+  </div>
 
-</div>
 
+  <div class="article-entry" itemprop="articleBody">
+    
+    
+    <h2 id="1、Spring事务的传播行为？"><a href="#1、Spring事务的传播行为？" class="headerlink" title="1、Spring事务的传播行为？"></a>1、Spring事务的传播行为？</h2><p><strong>支持当前事务的情况：</strong></p>
+<ul>
+<li><strong>TransactionDefinition.PROPAGATION_REQUIRED：</strong> 如果当前存在事务，则加入该事务；如果当前没有事务，则创建一个新的事务。</li>
+<li><strong>TransactionDefinition.PROPAGATION_SUPPORTS：</strong> 如果当前存在事务，则加入该事务；如果当前没有事务，则以非事务的方式继续运行。</li>
+<li><strong>TransactionDefinition.PROPAGATION_MANDATORY：</strong> 如果当前存在事务，则加入该事务；如果当前没有事务，则抛出异常。（mandatory：强制性）</li>
+</ul>
+<p><strong>不支持当前事务的情况：</strong></p>
+<ul>
+<li><strong>TransactionDefinition.PROPAGATION_REQUIRES_NEW：</strong> 创建一个新的事务，如果当前存在事务，则把当前事务挂起。</li>
+<li><strong>TransactionDefinition.PROPAGATION_NOT_SUPPORTED：</strong> 以非事务方式运行，如果当前存在事务，则把当前事务挂起。</li>
+<li><strong>TransactionDefinition.PROPAGATION_NEVER：</strong> 以非事务方式运行，如果当前存在事务，则抛出异常。</li>
+</ul>
+<p><strong>其他情况：</strong></p>
+<ul>
+<li><strong>TransactionDefinition.PROPAGATION_NESTED：</strong> 如果当前存在事务，则创建一个事务作为当前事务的嵌套事务来运行；如果当前没有事务，则该取值等价于TransactionDefinition.PROPAGATION_REQUIRED。</li>
+</ul>
+<h2 id="2、zk集群宕机了，还能提供服务吗？本地缓存何时刷新？"><a href="#2、zk集群宕机了，还能提供服务吗？本地缓存何时刷新？" class="headerlink" title="2、zk集群宕机了，还能提供服务吗？本地缓存何时刷新？"></a>2、zk集群宕机了，还能提供服务吗？本地缓存何时刷新？</h2><p>可以的，启动dubbo时，消费者会从zk拉取注册的生产者的地址接口等数据，缓存在本地。每次调用时，按照本地存储的地址进行调用<br>注册中心对等集群，任意一台宕掉后，会自动切换到另一台注册中心全部宕掉，服务提供者和消费者仍可以通过本地缓存通讯，服务提供者无状态，任一台 宕机后，不影响使用服务提供者全部宕机，服务消费者会无法使用，并无限次重连等待服务者恢复</p>
+<h2 id="3、怎么保证mq的高可用性，比如说，一个时间点mq宕机了，如何保证消息推送到mq和正确消费？"><a href="#3、怎么保证mq的高可用性，比如说，一个时间点mq宕机了，如何保证消息推送到mq和正确消费？" class="headerlink" title="3、怎么保证mq的高可用性，比如说，一个时间点mq宕机了，如何保证消息推送到mq和正确消费？"></a>3、怎么保证mq的高可用性，比如说，一个时间点mq宕机了，如何保证消息推送到mq和正确消费？</h2><ul>
+<li><h5 id="消息为什么会丢失？"><a href="#消息为什么会丢失？" class="headerlink" title="消息为什么会丢失？"></a>消息为什么会丢失？</h5></li>
+</ul>
+<p>RabbitMQ默认情况下的交换机和队列以及消息是非持久化的，也就是说在服务器重启或者宕机恢复后，之前创建的交换机和队列都将不复存在，之前未消费的消息也就消失不见了。原因在于每个队列和交换机的durable属性。该属性默认情况是false，它决定了RabbitMQ是否需要在崩溃或者重启之后重新创建队列（或者交换机）。</p>
+<ul>
+<li><h5 id="持久化交换机和队列"><a href="#持久化交换机和队列" class="headerlink" title="持久化交换机和队列?"></a>持久化交换机和队列?</h5></li>
+</ul>
+<p>将交换机和队列的durable属性设置为true，这样你就不需要在服务器断电后重新创建队列和交换机了。你也许会认为把队列和交换机的durable属性设置为true就足够可以让消息幸免于重启后丢失了，真的是这样吗？队列和交换机当然必须被设置为true，但光这样做还不够。<br>能从AMQP服务器崩溃中恢复的消息，我们称之为持久化消息。在消息发布前，通过把它的“投递默认”（ delivery mode）选项设置为2（AMQP客户端可能会使用人性化的常量来代替数值）来把消息标记成持久化。到目前为止，消息还只是被表示为持久化的，但是它还必须被发布到持久化的交换机中，并到达持久化的队列中才行。如果不是这样的话，则包含持久化消息的队列（或者交换机）会在Rabbit崩溃重启后不复存在，从而导致消息丢失。</p>
+<ul>
+<li><h5 id="持久化消息"><a href="#持久化消息" class="headerlink" title="持久化消息?"></a>持久化消息?</h5></li>
+</ul>
+<p>因此，如果消息想要从Rabbit崩溃中恢复，那么消息必须满足以下条件：</p>
+<ol>
+<li>把它的投递默认选项设置为持久化</li>
+<li>发送到持久化的交换机</li>
+<li>到达持久化的队列</li>
+</ol>
+<p>做到以上三点，你就不需要担心发送到Rabbit服务器的消息因服务器崩溃等其它原因而丢失了。</p>
+<ul>
+<li><h5 id="如何做到消息持久化的"><a href="#如何做到消息持久化的" class="headerlink" title="如何做到消息持久化的?"></a>如何做到消息持久化的?</h5></li>
+</ul>
+<p>RabbitMQ确保持久性消息能从服务器重启中恢复的方式是，将它们写入磁盘上的一个持久化日志文件。当发布一个持久性消息到持久交换机上时，Rabbit会在消息提交到日志文件后才发送响应。记住，之后这条消息如果路由到了非持久队列的话，它会自动从持久性日志中移除，并且无法从服务器重启中恢复。如果你使用持久性消息的话，则确保之前提到的持久性消息的那三点都必须做到位。一旦你从持久性队列中消费了一个持久性消息的话（并且确认了它），RabbitMQ会在持久化日志中把这条消息标记为等待垃圾收集。在你消费持久性消息前，如果RabbitMQ重启的话，服务器会自动重建交换机和队列（以及绑定），重播持久性日志文件的消息到合适的队列或者交换机上（取决于Rabbit服务器宕机的时候，消息处在路由过程的哪个环节）。<br>虽然持久化消息可以做到消息的不丢失，但持久化的消息在进入队列前会被写到磁盘，这个过程比写到内存慢得多，所以会严重的影响性能，可能导致消息的吞吐量降低10倍不止。所以，在做消息持久化前，一定要认真考虑性能和需求之间的平衡关系。</p>
+<h4 id="待续。。。。。"><a href="#待续。。。。。" class="headerlink" title="待续。。。。。"></a>待续。。。。。</h4>
+    
+      
+      <div class='footer'>
+        
+        
+        
+          <div class='copyright'>
+            <blockquote>
+              
+                
+                  <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+                
+              
+                
+                  <p>本文永久链接是：<a href=https://orangemaid.github.io/2020/09/11/interviewAnalyse/interviewByLiang/>https://orangemaid.github.io/2020/09/11/interviewAnalyse/interviewByLiang/</a></p>
+                
+              
+            </blockquote>
           </div>
         
+        
+      </div>
+    
+  </div>
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-11T18:09:25+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2020年9月11日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/OrangeMaid.github.io/tags/%E9%9D%A2%E8%AF%95/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>面试</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://orangemaid.github.io/2020/09/11/interviewAnalyse/interviewByLiang/&title=面试复盘 - wang'liang的小站&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
       
     
-  </section>
-  
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://orangemaid.github.io/2020/09/11/interviewAnalyse/interviewByLiang/&title=面试复盘 - wang'liang的小站&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
     
-  
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://orangemaid.github.io/2020/09/11/interviewAnalyse/interviewByLiang/&title=面试复盘 - wang'liang的小站&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
 
 
-    
+
+        
+      
+    </div>
+  </div>
+
+
   
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/OrangeMaid.github.io/2020/09/07/Life/%E6%B5%B7%E8%B4%BC%E7%8E%8B%E8%AF%AD%E5%BD%95/'>
+          <p class='title'>海贼王<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>海贼王语录
+1.比如说有一块肉，英雄会把它分给别人，而海贼会拿它来开宴会。我喜欢吃肉！我不是英雄，我只做我想做的事，保护我想要保护的人而已。——路飞《海贼王》
+2.只管把目标定在高峰，人家要笑就...</p>
+        </a>
+      
+    </div>
+  
+</article>
+
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+</div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -530,146 +715,28 @@
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/OrangeMaid.github.io/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/OrangeMaid/jsDelivrPic/Logo_W.png_300.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">wang'liang的小站</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/OrangeMaid.github.io/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/OrangeMaid"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/OrangeMaid.github.io/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-  
-
-  <section class="widget category shadow desktop">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/OrangeMaid.github.io/categories/Java/" href="/OrangeMaid.github.io/categories/Java/"
-            id="OrangeMaidgithubiocategoriesJava"
-            ><div class='name'>Java</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/OrangeMaid.github.io/categories/hexo%E6%90%AD%E5%BB%BA/" href="/OrangeMaid.github.io/categories/hexo%E6%90%AD%E5%BB%BA/"
-            id="OrangeMaidgithubiocategorieshexoE690ADE5BBBA"
-            ><div class='name'>hexo搭建</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/OrangeMaid.github.io/categories/tools%E6%90%AD%E5%BB%BA/" href="/OrangeMaid.github.io/categories/tools%E6%90%AD%E5%BB%BA/"
-            id="OrangeMaidgithubiocategoriestoolsE690ADE5BBBA"
-            ><div class='name'>tools搭建</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/OrangeMaid.github.io/categories/%E7%94%9F%E6%B4%BB%E5%B0%8F%E8%AE%B0/" href="/OrangeMaid.github.io/categories/%E7%94%9F%E6%B4%BB%E5%B0%8F%E8%AE%B0/"
-            id="OrangeMaidgithubiocategoriesE7949FE6B4BBE5B08FE8AEB0"
-            ><div class='name'>生活小记</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/OrangeMaid.github.io/categories/%E9%9D%A2%E8%AF%95/" href="/OrangeMaid.github.io/categories/%E9%9D%A2%E8%AF%95/"
-            id="OrangeMaidgithubiocategoriesE99DA2E8AF95"
-            ><div class='name'>面试</div><div class='badge'>(2)</div></a></li>
-        
-      </ul>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81Spring%E4%BA%8B%E5%8A%A1%E7%9A%84%E4%BC%A0%E6%92%AD%E8%A1%8C%E4%B8%BA%EF%BC%9F"><span class="toc-text">1、Spring事务的传播行为？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81zk%E9%9B%86%E7%BE%A4%E5%AE%95%E6%9C%BA%E4%BA%86%EF%BC%8C%E8%BF%98%E8%83%BD%E6%8F%90%E4%BE%9B%E6%9C%8D%E5%8A%A1%E5%90%97%EF%BC%9F%E6%9C%AC%E5%9C%B0%E7%BC%93%E5%AD%98%E4%BD%95%E6%97%B6%E5%88%B7%E6%96%B0%EF%BC%9F"><span class="toc-text">2、zk集群宕机了，还能提供服务吗？本地缓存何时刷新？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E6%80%8E%E4%B9%88%E4%BF%9D%E8%AF%81mq%E7%9A%84%E9%AB%98%E5%8F%AF%E7%94%A8%E6%80%A7%EF%BC%8C%E6%AF%94%E5%A6%82%E8%AF%B4%EF%BC%8C%E4%B8%80%E4%B8%AA%E6%97%B6%E9%97%B4%E7%82%B9mq%E5%AE%95%E6%9C%BA%E4%BA%86%EF%BC%8C%E5%A6%82%E4%BD%95%E4%BF%9D%E8%AF%81%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81%E5%88%B0mq%E5%92%8C%E6%AD%A3%E7%A1%AE%E6%B6%88%E8%B4%B9%EF%BC%9F"><span class="toc-text">3、怎么保证mq的高可用性，比如说，一个时间点mq宕机了，如何保证消息推送到mq和正确消费？</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%B6%88%E6%81%AF%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BC%9A%E4%B8%A2%E5%A4%B1%EF%BC%9F"><span class="toc-text">消息为什么会丢失？</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%8C%81%E4%B9%85%E5%8C%96%E4%BA%A4%E6%8D%A2%E6%9C%BA%E5%92%8C%E9%98%9F%E5%88%97"><span class="toc-text">持久化交换机和队列?</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%8C%81%E4%B9%85%E5%8C%96%E6%B6%88%E6%81%AF"><span class="toc-text">持久化消息?</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A6%82%E4%BD%95%E5%81%9A%E5%88%B0%E6%B6%88%E6%81%AF%E6%8C%81%E4%B9%85%E5%8C%96%E7%9A%84"><span class="toc-text">如何做到消息持久化的?</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BE%85%E7%BB%AD%E3%80%82%E3%80%82%E3%80%82%E3%80%82%E3%80%82"><span class="toc-text">待续。。。。。</span></a></li></ol></li></ol></li></ol>
     </div>
   </section>
 
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/OrangeMaid.github.io/tags/Java/" style="font-size: 24px; color: #555">Java</a> <a href="/OrangeMaid.github.io/tags/diary/" style="font-size: 14px; color: #999">diary</a> <a href="/OrangeMaid.github.io/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/OrangeMaid.github.io/tags/tools/" style="font-size: 14px; color: #999">tools</a> <a href="/OrangeMaid.github.io/tags/%E6%B5%B7%E8%B4%BC%E7%8E%8B/" style="font-size: 14px; color: #999">海贼王</a> <a href="/OrangeMaid.github.io/tags/%E9%9D%A2%E8%AF%95/" style="font-size: 19px; color: #777">面试</a>
-    </div>
-  </section>
-
-
-  
 
   
 
 
 </aside>
+
 
 
       </div>
